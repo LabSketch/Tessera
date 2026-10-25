@@ -1,4 +1,20 @@
 {
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "name": "Tessera",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/main",
+            "cwd": "${workspaceFolder}",
+            "showLog": false,
+            "args": [
+                "--configDir", "${workspaceFolder}/config"
+            ],
+            "env": {
+                "ENV": "development",
+            }
+        }
+    ]
 }
